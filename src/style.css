@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background:#ddd;
+}
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+  background: hwb(0 35% 64%);
+}
+
+.iconSVG {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* 高亮显示 */
+.on:hover {
+  cursor: pointer;
+  color: #61BF82;
+}
+
+.active {
+  cursor: pointer;
+  color: #61BF82;
+}
+
+.acitve:hvoer {
+  cursor: pointer;
+  color: #61BF82;
+}
+
+.onAcitve {
+  cursor: pointer;
+  color: white;
+  background-color: #31c27c;
+}
+
+.onAcitve:hover {
+  color: white;
+}
+
+.bgI {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+
+  .toplay {
+    transition: 0.5s all ease-out;
+    opacity: 0;
+    position: absolute;
+    width: 49px;
+    height: 49px;
+  }
+}
+
+.bgI:hover {
+  cursor: pointer;
+
+  .toplay {
+    opacity: 1;
+  }
+}
